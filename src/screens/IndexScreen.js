@@ -7,11 +7,9 @@ import { AntDesign } from '@expo/vector-icons';
 
 const IndexScreen = ({navigation}) => {
     //This is the value prop used in BlogContext
-    const {state, addBlogPost, deleteBlogPost} = useContext(Context);
-
+    const {state, deleteBlogPost} = useContext(Context);
     return (
         <View>
-            <Text>Index screen</Text>
             {/* <Button title="Add Post" onPress={addBlogPost("title", "content")}/> */}
             <FlatList 
                 data = {state}
